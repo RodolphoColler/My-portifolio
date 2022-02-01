@@ -1,7 +1,8 @@
+import Projects from './components/Projects';
 
 function App() {
   return (
-    <h1>re starting my portifolio</h1> 
+    <Projects />
   );
 }
 
