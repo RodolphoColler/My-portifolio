@@ -28,22 +28,24 @@
   margin-bottom: 40px;
 }
 
-h2 {
+.trybewarts h2 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
   margin-bottom: 15px;
+  color: rgb(50, 167, 145);
 }
 
-.container-languages {
+.trybewarts-languages {
   display: flex;
   margin-bottom: 10px;
 }
 
-.container-languages p {
+.trybewarts-languages p {
   font-family: 'Caveat', cursive;
   font-size: 25px;
   margin-right: 50px;
   margin-bottom: 30px;
+  color: black;
 }
 
 .trybewarts button {
