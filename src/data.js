@@ -3,7 +3,7 @@ const data = [
     index: '01.',
     title: 'trybewarts',
     path: 'https://i.imgur.com/DwPe2FH.png',
-    description: 'Tryberwarts is a short project to learn how forms \n are builded, how use css flexbox and train my javascript logic.',
+    description: 'Tryberwarts is a short project to learn how forms are builded, how use css flexbox and train my javascript logic.',
     languages: ['html', 'css', 'javascript']
   },
   {
