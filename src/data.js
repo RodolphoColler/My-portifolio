@@ -7,8 +7,11 @@ const data = [
     languages: ['html', 'css', 'javascript']
   },
   {
-    title: 'FIFTEEN-PUZZLE',
-    languages: ['html', 'css', 'javascript']
+    index: '02.',
+    title: 'fifteen-puzzle',
+    path: 'https://i.imgur.com/EBeQNzy.png',
+    description: 'I made fifteen-puzzle to challenge myself and get my first contact with solid.js. It was a good experience to improve my refactoring skills.',
+    languages: ['html', 'css', 'javascript', 'solid.js']
   }
 ]
 
