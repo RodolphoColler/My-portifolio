@@ -1,8 +1,12 @@
+import Apresentation from './components/Apresentarion';
 import Projects from './components/Projects';
 
 function App() {
   return (
-    <Projects />
+    <>
+      <Apresentation />
+      <Projects />
+    </>
   );
 }
 
