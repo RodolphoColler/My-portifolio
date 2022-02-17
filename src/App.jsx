@@ -1,11 +1,11 @@
-import Presentation from './components/Presentation';
 import Projects from './components/Projects';
+import About from './components/About';
 
 function App() {
   return (
     <>
-      <Presentation />
       <Projects />
+      <About />
     </>
   );
 }
