@@ -1,10 +1,10 @@
-import Apresentation from './components/Apresentarion';
+import Presentation from './components/Presentation';
 import Projects from './components/Projects';
 
 function App() {
   return (
     <>
-      <Apresentation />
+      <Presentation />
       <Projects />
     </>
   );

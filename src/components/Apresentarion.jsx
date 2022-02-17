@@ -1,9 +1,9 @@
-import '../css/Apresentation.css'
+import '../css/Presentation.css'
 
-function Apresentation() {
+function Presentation() {
   return (
     <h1>my name</h1>
   );
 }
 
-export default Apresentation;
+export default Presentation;
