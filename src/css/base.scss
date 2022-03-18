@@ -1,79 +1,66 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.trybewarts {
+@mixin section($bg-color) {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: aliceblue;
   height: 100vh;
+  background-color: $bg-color;
 }
 
-.trybewarts-title {
+@mixin project-title($color) {
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
   font-size: 70px;
   margin-bottom: 30px;
-  color: rgb(50, 167, 145);
+  font-weight: 300;
+  color: $color;
 }
 
-.trybewarts-description {
+@mixin project-description($color) {
   font-family: 'Caveat', cursive;
   display: flex;
   width: 450px;
   font-size: 25px;
   margin-bottom: 40px;
+  color: $color;
 }
 
-.trybewarts h2 {
+@mixin languages-title($color) {
   font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
   font-size: 20px;
   margin-bottom: 15px;
-  color: #32a791;
+  color: $color;
 }
 
-.trybewarts-languages {
-  display: flex;
-  margin-bottom: 10px;
-}
-
-.trybewarts-languages p {
+@mixin languages($color) {
   font-family: 'Caveat', cursive;
   font-size: 25px;
   margin-right: 50px;
   margin-bottom: 30px;
-  color: black;
+  color: $color;
 }
 
-.trybewarts .buttons-container {
-  display: flex;
-  justify-content: space-between;
-  width: 450px;
-}
-
-.trybewarts a {
+@mixin buttons($bg-color, $color) {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  color: #f0f8ff;
-  cursor: pointer;
   text-decoration: none;
   font-family: 'Josefin Sans', sans-serif;
-  background-color: #32a791;
+  cursor: pointer;
+  color: $color;
+  font-weight: 300;
+  background-color: $bg-color;
   border: 1px solid transparent;
   border-radius: 8px;
-  font-weight: 600;
   height: 50px;
   width: 200px;
   font-size: 20px;
   transition: 0.7s;
 }
 
-.trybewarts a:hover {
-  background-color: #f0f8ff;
-  border: 1px solid #32a791;
-  color: #32a791;
+@mixin buttons-hover($bg-color, $color) {
+  background-color: $bg-color;
+  border: 1px solid $color;
+  color: $color;
   transition: 0.6s;
 }

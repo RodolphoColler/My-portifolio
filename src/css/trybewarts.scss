@@ -1,0 +1,46 @@
+@use "src/css/base";
+
+$background: #f0f8ff;
+$green-base: #32a791;
+$text-color: #313131;
+
+.trybewarts {
+  @include base.section($background);
+}
+
+.trybewarts-title {
+  @include base.project-title($green-base)
+}
+
+
+
+.trybewarts-description {
+  @include base.project-description($text-color)
+}
+
+.trybewarts h2 {
+  @include base.languages-title($text-color)
+}
+
+.trybewarts-languages {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.trybewarts-languages p {
+  @include base.languages($text-color)
+}
+
+.trybewarts .buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+}
+
+.trybewarts a {
+  @include base.buttons($green-base, $background);
+
+  &:hover { 
+    @include base.buttons-hover($background, $green-base)
+  }
+}

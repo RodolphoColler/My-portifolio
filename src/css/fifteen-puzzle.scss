@@ -1,0 +1,48 @@
+@use "src/css/base";
+
+$background: #26495c;
+$orange-base: #c66b3d;
+$text-color: #e9e9e9;
+
+.fifteen-puzzle {
+  @include base.section($background)
+}
+
+.fifteen-puzzle img {
+  border-radius: 8px;
+}
+
+.fifteen-puzzle-title {
+  @include base.project-title($orange-base)
+}
+
+.fifteen-puzzle-description {
+  @include base.project-description($text-color)
+}
+
+.fifteen-puzzle h2 {
+  @include base.languages-title($orange-base)
+}
+
+.fifteen-puzzle-languages {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.fifteen-puzzle-languages p {
+  @include base.languages($text-color)
+}
+
+.fifteen-puzzle .buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+}
+
+.fifteen-puzzle a {
+  @include base.buttons($orange-base, $text-color);
+
+  &:hover { 
+    @include base.buttons-hover($background, $orange-base)
+  }
+}
