@@ -64,3 +64,28 @@
   color: $color;
   transition: 0.6s;
 }
+
+.animation-container {
+  overflow: hidden;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+}
+
+.languages-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+[data-aos="new-animation"] {
+  transform: translateY(200px);
+
+  &.aos-animate {
+    transition-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+}
+

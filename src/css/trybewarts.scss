@@ -9,32 +9,19 @@ $text-color: #313131;
 }
 
 .trybewarts-title {
-  @include base.project-title($green-base)
+  @include base.project-title($green-base);
 }
-
-
 
 .trybewarts-description {
   @include base.project-description($text-color)
 }
 
 .trybewarts h2 {
-  @include base.languages-title($text-color)
+  @include base.languages-title($green-base)
 }
 
-.trybewarts-languages {
-  display: flex;
-  margin-bottom: 10px;
-}
-
-.trybewarts-languages p {
+.trybewarts .languages-container p {
   @include base.languages($text-color)
-}
-
-.trybewarts .buttons-container {
-  display: flex;
-  justify-content: space-between;
-  width: 450px;
 }
 
 .trybewarts a {

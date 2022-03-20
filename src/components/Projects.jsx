@@ -1,24 +1,30 @@
 import { For } from 'solid-js';
 import data from '../data';
-import '../css/trybewarts.css'
-import '../css/fifteen-puzzle.css'
-import { AiFillGithub } from 'solid-icons/ai'
+import { AiFillGithub } from 'solid-icons/ai';
+import { CgWebsite } from 'solid-icons/cg';
+import '../css/trybewarts.scss';
+import '../css/fifteen-puzzle.scss';
 
 function Projects() {
   return (
-    <For each={ data }>{( { index, title, path, description, languages, website, github } ) =>
-      <section class={ title }>
+    <For each={ data }>{( { index, project, path, description, languages, website, github } ) =>
+      <section class={ project }>
         <img src={ path } width='500px'/>
         <aside>
-          <h1 class={ `${title}-title` }>{index}<br />{title}</h1>
-          <p class={ `${title}-description` }>{ description }</p>
+          <div class="animation-container">
+            <h1 class={ `${project}-title` } data-aos="new-animation">{index}<br />{project}</h1>
+          </div>
+          <p class={ `${project}-description`}>{ description }</p>
           <h2>LANGUAGES:</h2>
-          <div className={`${title}-languages`}>{languages.map(e => <p>{e}</p>)}</div>
+          <div class="languages-container">{languages.map(e => <p>{e}</p>)}</div>
           <div class='buttons-container'>
-            <a href={ website } target='_blank'>SEE MORE</a>
+            <a href={ website } target='_blank'>
+            <CgWebsite size={30}/>
+              WEBSITE
+            </a>
             <a href={ github } target='_blank'>
-              <AiFillGithub size={30} class='git-icon'/>
-              <p>SEE IN GITHUB</p>
+              <AiFillGithub size={32}/>
+              SEE IN GITHUB
             </a>
           </div>
         </aside>
