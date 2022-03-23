@@ -1,5 +1,6 @@
 import Projects from './components/Projects';
 import About from './components/About';
+import Home from './components/Home';
 import './css/app.css';
 import { onMount } from 'solid-js';
 import AOS from 'aos';
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
       <div class='wrapper'>
+        <Home />
         <Projects />
         <About />
       </div>
