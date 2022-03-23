@@ -19,12 +19,12 @@ function Projects() {
             <h2 data-aos="new-animation" data-aos-duration="900" data-aos-easing="ease-in-out" >LANGUAGES:</h2>
           </div>
           <div class="languages-container animation-container">
-            {languages.map(e => <p data-aos="fade-up" >{e}</p>)}
+            <For each={languages}>{ language => <p data-aos="fade-up">{language}</p> }</For>
           </div>
           <div class="animation-container">
             <div class='buttons-container' data-aos="new-animation" >
               <a href={ website } target='_blank'>
-              <CgWebsite size={30}/>
+                <CgWebsite size={30}/>
                 WEBSITE
               </a>
               <a href={ github } target='_blank'>
