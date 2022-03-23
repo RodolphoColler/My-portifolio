@@ -8,6 +8,10 @@ $text-color: #313131;
   @include base.section($background);
 }
 
+#trybewarts img {
+  @include base.project-img()
+}
+
 .trybewarts-title {
   @include base.project-title($green-base);
 }

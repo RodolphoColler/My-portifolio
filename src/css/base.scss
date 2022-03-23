@@ -6,6 +6,21 @@
   background-color: $bg-color;
 }
 
+@mixin project-img() {
+  width: 470px;
+  height: 500px;
+  border-radius: 8px;
+  margin-left: 100px;
+}
+
+aside {
+  width: 600px;
+}
+
+.animation-container {
+  overflow: hidden;
+}
+
 @mixin project-title($color) {
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
@@ -32,12 +47,23 @@
   color: $color;
 }
 
+.languages-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
 @mixin languages($color) {
   font-family: 'Caveat', cursive;
   font-size: 25px;
   margin-right: 50px;
   margin-bottom: 30px;
   color: $color;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
 }
 
 @mixin buttons($bg-color, $color) {
@@ -65,27 +91,20 @@
   transition: 0.6s;
 }
 
-.animation-container {
-  overflow: hidden;
-}
-
-.buttons-container {
-  display: flex;
-  justify-content: space-between;
-  width: 450px;
-}
-
-.languages-container {
-  display: flex;
-  margin-bottom: 10px;
-}
-
 [data-aos="new-animation"] {
-  transform: translateY(200px);
+  transform: translateY(170px);
 
   &.aos-animate {
-    transition-timing-function: ease-out;
     transform: translateY(0px);
   }
 }
 
+[data-aos="custom-fade-up"] {
+  transform: translateY(50px);
+  opacity: 0;
+
+  &.aos-animate {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
