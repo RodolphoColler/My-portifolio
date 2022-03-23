@@ -7,7 +7,7 @@ function Presentation() {
       <h1>Hi, Im Rodolpho</h1>
       <h2>Front-end developer <br /> trying look outside the box</h2>
       <h3>see my projects</h3>
-      <a href="#trybewarts" target="_self" >
+      <a href="#trybewarts">
         <RiSystemArrowDownSLine size={70}/>
       </a>
     </section>
