@@ -8,7 +8,7 @@ import '../css/fifteen-puzzle.scss';
 function Projects() {
   return (
     <For each={ data }>{( { index, project, path, description, languages, website, github } ) =>
-      <section class={ project }>
+      <section id={ project }>
         <img src={ path } width='500px' data-aos="fade-right" data-aos-delay="600" />
         <aside>
           <div class="animation-container">

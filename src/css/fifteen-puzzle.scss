@@ -4,11 +4,11 @@ $background: #26495c;
 $orange-base: #c66b3d;
 $text-color: #e9e9e9;
 
-.fifteen-puzzle {
+#fifteen-puzzle {
   @include base.section($background)
 }
 
-.fifteen-puzzle img {
+#fifteen-puzzle img {
   border-radius: 8px;
 }
 
@@ -20,15 +20,15 @@ $text-color: #e9e9e9;
   @include base.project-description($text-color)
 }
 
-.fifteen-puzzle h2 {
+#fifteen-puzzle h2 {
   @include base.languages-title($orange-base)
 }
 
-.fifteen-puzzle .languages-container  p {
+#fifteen-puzzle .languages-container  p {
   @include base.languages($text-color)
 }
 
-.fifteen-puzzle a {
+#fifteen-puzzle a {
   @include base.buttons($orange-base, $text-color);
 
   &:hover { 
