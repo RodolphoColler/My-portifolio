@@ -81,7 +81,7 @@ aside {
   height: 50px;
   width: 200px;
   font-size: 20px;
-  transition: 0.7s;
+  transition: 0.3s ease-in;
 }
 
 @mixin buttons-hover($bg-color, $color) {

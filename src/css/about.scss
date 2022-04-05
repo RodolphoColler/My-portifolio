@@ -1,0 +1,54 @@
+@use "src/css/base";
+
+$background: #161718;
+$blue-base: #4874b6;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #161718;
+  height: 100vh;
+}
+
+.about > img {
+  border-radius: 30px;
+}
+
+.about aside {
+  width: 700px
+}
+
+.about aside > h1 {
+  @include base.project-title($blue-base);
+}
+
+.my-description {
+  font-family: 'Caveat', cursive;
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  font-size: 27px;
+  margin-bottom: 40px;
+  color: #eef1fa;
+}
+
+.about div {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+}
+
+.about a {
+  @include base.buttons($blue-base, $background);
+
+  &:hover { 
+    @include base.buttons-hover($background, $blue-base)
+  }
+}
