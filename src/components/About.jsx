@@ -14,11 +14,11 @@ function About() {
             developer.
             I'm curious programmer, like to improve my abilities,
             refactor code, and see problems from another approach.
-            Starting from that i'm search for a job that i can 
+            Starting from that i'm searching for a job that i can 
             contribute and be open to learn good programming.
           </p>
           <div data-aos="fade-in">
-            <a href="https://github.com/RodolphoColler/trybewarts" target="_blank"><AiFillGithub size={30} color="#fffff"/>GITHUB</a>
+            <a href="https://github.com/RodolphoColler" target="_blank"><AiFillGithub size={30} color="#fffff"/>GITHUB</a>
             <a href="https://www.linkedin.com/in/rodolpho-coller/" target="_blank"><AiFillLinkedin size={30} color="#fffff"/>LINKEDIN</a>
             <a href="https://www.instagram.com/sweetie_da_isa/" target="_blank"><AiOutlineInstagram size={30} color="#fffff"/>INSTAGRAM</a>
           </div>

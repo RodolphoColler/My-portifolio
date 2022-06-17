@@ -9,7 +9,8 @@ $text-color: #313131;
 }
 
 #trybewarts img {
-  @include base.project-img()
+  @include base.project-img();
+  height: 67%;
 }
 
 .trybewarts-title {
