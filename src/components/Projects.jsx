@@ -4,6 +4,7 @@ import { AiFillGithub } from 'solid-icons/ai';
 import { CgWebsite } from 'solid-icons/cg';
 import '../css/trybewarts.scss';
 import '../css/fifteen-puzzle.scss';
+import '../css/tfc.scss';
 
 function Projects() {
   return (

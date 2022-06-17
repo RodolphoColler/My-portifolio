@@ -1,0 +1,38 @@
+@use "src/css/base";
+
+$background: #eceff2;
+$orange-base: #31354e;
+$text-color: #32a791;
+
+#tfc {
+  @include base.section($background)
+}
+
+#tfc img {
+  @include base.project-img();
+  height: 58%;
+}
+
+.tfc-title {
+  @include base.project-title($orange-base);
+}
+
+.tfc-description {
+  @include base.project-description($text-color)
+}
+
+#tfc h2 {
+  @include base.languages-title($orange-base)
+}
+
+#tfc .languages-container  p {
+  @include base.languages($text-color)
+}
+
+#tfc a {
+  @include base.buttons($orange-base, $text-color);
+
+  &:hover { 
+    @include base.buttons-hover($background, $orange-base)
+  }
+}

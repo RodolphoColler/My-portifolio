@@ -16,6 +16,15 @@ const data = [
     languages: ['html', 'css', 'javascript', 'solid.js'],
     website: 'https://fifteen-puzzle-nine.vercel.app/',
     github: 'https://github.com/RodolphoColler/fifteen-puzzle'
+  },
+  {
+    index: '03.',
+    project: 'tfc',
+    path: 'https://i.imgur.com/ed0Pv5U.png',
+    description: 'TFC is a informative site about matches and football classification. It\'s the first time that i integrate backend and frontend.',
+    languages: ['node', 'express', 'typescript', 'sequelize', 'jwt'],
+    website: 'https://tfc-frontend.vercel.app/leaderboard',
+    github: 'https://github.com/RodolphoColler/tfc-frontend'
   }
 ]
 
