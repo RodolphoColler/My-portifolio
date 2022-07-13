@@ -1,0 +1,38 @@
+@use "src/css/base";
+
+$background: #171821;
+$gray-base: #4b5175;
+$text-color: #2d7dc8;
+
+#blizter {
+  @include base.section($background)
+}
+
+#blizter img {
+  @include base.project-img();
+  height: 58%;
+}
+
+.blizter-title {
+  @include base.project-title($text-color);
+}
+
+.blizter-description {
+  @include base.project-description($gray-base)
+}
+
+#blizter h2 {
+  @include base.languages-title($text-color)
+}
+
+#blizter .languages-container  p {
+  @include base.languages($gray-base)
+}
+
+#blizter a {
+  @include base.buttons($text-color, $gray-base);
+
+  &:hover { 
+    @include base.buttons-hover($background, $gray-base)
+  }
+}
