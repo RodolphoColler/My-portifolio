@@ -29,7 +29,7 @@ const data = [
   {
     index: '04.',
     project: 'blizter',
-    path: '../../wallet.png',
+    path: 'https://i.imgur.com/xHWmG2H.png',
     description: 'The easy way to get in day with your financial life, Blizter is my favorite and the first project that I build everything completely from scratch.',
     languages: ['node', 'express', 'typescript', 'prisma', 'react'],
     website: 'https://blizter.vercel.app/',
