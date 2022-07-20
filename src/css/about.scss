@@ -19,6 +19,10 @@ $blue-base: #4874b6;
 
 .about > img {
   border-radius: 30px;
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 }
 
 .about aside {
