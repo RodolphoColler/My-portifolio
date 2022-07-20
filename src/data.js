@@ -25,6 +25,15 @@ const data = [
     languages: ['node', 'express', 'typescript', 'sequelize', 'jwt'],
     website: 'https://tfc-frontend.vercel.app/leaderboard',
     github: 'https://github.com/RodolphoColler/tfc-frontend'
+  },
+  {
+    index: '04.',
+    project: 'blizter',
+    path: '../../wallet.png',
+    description: 'The easy way to get in day with your financial life, Blizter is my favorite and the first project that I build everything completely from scratch.',
+    languages: ['node', 'express', 'typescript', 'prisma', 'react'],
+    website: 'https://blizter.vercel.app/',
+    github: 'https://github.com/RodolphoColler/blizter-frontend'
   }
 ]
 

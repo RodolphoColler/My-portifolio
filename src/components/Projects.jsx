@@ -5,6 +5,7 @@ import { CgWebsite } from 'solid-icons/cg';
 import '../css/trybewarts.scss';
 import '../css/fifteen-puzzle.scss';
 import '../css/tfc.scss';
+import '../css/blizter.scss';
 
 function Projects() {
   return (

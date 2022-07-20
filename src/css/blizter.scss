@@ -10,7 +10,10 @@ $text-color: #2d7dc8;
 
 #blizter img {
   @include base.project-img();
-  height: 58%;
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 }
 
 .blizter-title {
@@ -33,6 +36,6 @@ $text-color: #2d7dc8;
   @include base.buttons($text-color, $gray-base);
 
   &:hover { 
-    @include base.buttons-hover($background, $gray-base)
+    @include base.buttons-hover($background, $text-color)
   }
 }
