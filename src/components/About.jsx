@@ -15,7 +15,7 @@ function About() {
             I'm curious programmer, like to improve my abilities,
             refactor code, and see problems from another approach.
             Starting from that i'm searching for a job that i can 
-            contribute and be open to learn good programming.
+            contribute and be open to learn even more about programming.
           </p>
           <div data-aos="fade-in">
             <a href="https://github.com/RodolphoColler" target="_blank"><AiFillGithub size={30} color="#fffff"/>GITHUB</a>
