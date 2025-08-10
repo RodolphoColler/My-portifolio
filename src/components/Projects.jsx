@@ -19,7 +19,7 @@ function Projects() {
             </div>
             <p class={ `${project}-description`} data-aos="custom-fade-up" >{ description }</p>
             <div class="animation-container">
-              <h2 data-aos="new-animation" data-aos-duration="900" data-aos-easing="ease-in-out" >LANGUAGES:</h2>
+              <h2 data-aos="new-animation" data-aos-duration="900" data-aos-easing="ease-in-out" >TECNOLOGIAS:</h2>
             </div>
             <div class="languages-container animation-container">
               <For each={languages}>{ language => <p data-aos="custom-fade-up">{language}</p> }</For>
