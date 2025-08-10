@@ -2,15 +2,18 @@
 
 $background: #eceff2;
 $orange-base: #31354e;
-$text-color: #32a791;
+$text-color: #28927f;
 
 #tfc {
+  background-color: $background;
+}
+
+#tfc-container {
   @include base.section($background)
 }
 
 #tfc img {
   @include base.project-img();
-  height: 58%;
 }
 
 .tfc-title {

@@ -1,24 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 @mixin section($bg-color) {
   display: flex;
+  gap: 80px;
   align-items: center;
-  justify-content: space-evenly;
-  height: 100vh;
+  justify-content: space-between;
+  min-height: 100vh;
   background-color: $bg-color;
-  padding-left: 8%;
+  max-width: 1366px;
+  margin: auto;
+  padding: 120px;
+
+  @media screen and (max-width: 992px) {
+    padding: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 15px;
+  }
 }
 
 @mixin project-img() {
-  width: 33%;
-  height: 60%;
+  flex: 1;
   border-radius: 8px;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 1200px) {
     display: none;
   }
 }
 
 aside {
-  width: 600px;
+  flex: 1.3;
 }
 
 .animation-container {
@@ -28,17 +44,24 @@ aside {
 @mixin project-title($color) {
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
-  font-size: 70px;
+  font-size: 68px;
+  line-height: 56px;
   margin-bottom: 30px;
   font-weight: 300;
   color: $color;
+
+  @media screen and (max-width: 576px) {
+    font-size: 60px;
+    line-height: 52px;
+  }
 }
 
 @mixin project-description($color) {
-  font-family: 'Caveat', cursive;
+  font-family: "Open Sans", cursive;
   display: flex;
-  width: 450px;
-  font-size: 25px;
+  max-width: 450px;
+  font-size: 18px;
+  font-weight: 300;
   color: $color;
 }
 
@@ -53,21 +76,28 @@ aside {
 
 .languages-container {
   display: flex;
-  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 50px;
+  row-gap: 5px;
+  margin-bottom: 30px;
 }
 
 @mixin languages($color) {
-  font-family: 'Caveat', cursive;
-  font-size: 25px;
-  margin-right: 50px;
-  margin-bottom: 30px;
+  font-family: "Open Sans", cursive;
+  font-size: 18px;
+  font-weight: 300;
   color: $color;
 }
 
 .buttons-container {
   display: flex;
-  justify-content: space-between;
-  width: 450px;
+  gap: 50px;
+  flex-wrap: wrap;
+  row-gap: 15px;
+
+  @media screen and (max-width: 576px) {
+    justify-content: center;
+  }
 }
 
 @mixin buttons($bg-color, $color) {
@@ -85,14 +115,23 @@ aside {
   height: 50px;
   width: 200px;
   font-size: 20px;
-  transition: 0.3s ease-in;
+  transition: 0.15s ease-in;
+
+  @media screen and (max-width: 576px) {
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+
+    a {
+      width: 100%;
+    }
+  }
 }
 
 @mixin buttons-hover($bg-color, $color) {
   background-color: $bg-color;
   border: 1px solid $color;
   color: $color;
-  transition: 0.6s;
 }
 
 [data-aos="new-animation"] {

@@ -1,9 +1,9 @@
 section {
-  scroll-snap-align: start;
+  /* scroll-snap-align: y mandatory; */
 }
 
-/* .wrapper {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-} */
+.wrapper {
+  /* scroll-snap-type: y mandatory; */
+  /* overflow-y: scroll; */
+  /* height: 100vh; */
+}
